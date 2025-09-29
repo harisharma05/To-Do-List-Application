@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tasks</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="tasks-page">
+  <header class="main-header">
+    <a href="index.html">
+      <img src="favicon.png" alt="Logo" class="header-logo">
+    </a>
+    <h1>Your Tasks</h1>
+    <div class="header-buttons">
+      <button class="logout-btn" onclick="location.href='login.html'">Log Out</button>
+    </div>
+  </header>
+
+  <main class="tasks-container">
+    <div class="tasks-toolbar">
+      <button class="task-btn">Create Task</button>
+      <button class="task-btn">Edit Task</button>
+      <button class="task-btn" id="sort-date-btn">Sort by Date</button>
+      <button class="task-btn" id="sort-priority-btn">Sort by Priority</button>
+    </div>
+
+    <div id="task-modal" class="modal" style="display: none;">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2 id="modal-title">Create Task</h2>
+        <form id="task-form">
+          <label for="task-title">Title:</label>
+          <input type="text" id="task-title" required>
+
+          <label for="task-due">Due Date:</label>
+          <input type="date" id="task-due" required>
+
+          <label for="task-priority">Priority:</label>
+          <select id="task-priority" required>
+            <option value="High">High</option>
+            <option value="Medium">Medium</option>
+            <option value="Low">Low</option>
+          </select>
+
+          <button type="submit" class="footer-button">Save Task</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="tasks-list"></div>
+  </main>
+  <footer class="main-footer">
+    <p>To-Do List App &copy; 2025</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

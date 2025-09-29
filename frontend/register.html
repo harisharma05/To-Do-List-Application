@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Register</title>
+</head>
+<body class="register-page">
+    <header class="main-header">
+        <a href="index.html">
+            <img src="favicon.png" alt="Logo" class="header-logo">
+        </a>
+        <h1>To Do List</h1>
+        <div class="header-buttons">
+            <button class="login-btn" onclick="location.href='login.html'">Log In</button>
+        </div>
+    </header>
+    <main>
+        <div class="auth-box">
+            <h2>Sign Up</h2>
+            <form id="register-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                <button type="submit" class="footer-button">Submit</button>
+            </form>
+            <p class="switch-link">Already have an account? <a href="login.html">Log In</a></p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

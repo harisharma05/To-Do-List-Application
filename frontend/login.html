@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>Login</title>
+</head>
+<body class="register-page">
+    <header class="main-header">
+        <a href="index.html">
+            <img src="favicon.png" alt="Logo" class="header-logo">
+        </a>
+        <h1>To Do List</h1>
+        <div class="header-buttons">
+            <button class="signup-btn" onclick="location.href='register.html'">Sign Up</button>
+        </div>
+    </header>
+    <main>
+        <div class="auth-box">
+            <h2>Log In</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit" class="footer-button">Submit</button>
+            </form>
+            <p class="switch-link">Create an Account? <a href="register.html">Sign Up</a></p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
