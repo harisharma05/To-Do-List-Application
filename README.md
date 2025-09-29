@@ -51,7 +51,7 @@ Open localhost:5000 in your browser, or serve using a local server (e.g., Live S
 - Frontend and backend communicate via the Fetch API.
 
 ## File Structure
-```pgsql
+```sql
 To-Do-List-App/
 │
 ├─ backend/             # Node.js + Express backend
