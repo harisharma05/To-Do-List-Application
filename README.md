@@ -18,16 +18,19 @@ Clone the repository:
 ```bash
 git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
 cd YOUR_REPO
-
+```
 ## Install dependencies for backend:
 
+```bash
 cd backend
 npm install
+```
 
 ## Start the backend server:
 
+```bash
 node server.js
-
+```
 ## Open frontend:
 
 Open localhost:5000 in your browser, or serve using a local server (e.g., Live Server extension for VSCode).
@@ -48,7 +51,7 @@ Open localhost:5000 in your browser, or serve using a local server (e.g., Live S
 - Frontend and backend communicate via the Fetch API.
 
 ## File Structure
-
+```pgsql
 To-Do-List-App/
 │
 ├─ backend/             # Node.js + Express backend
@@ -67,7 +70,7 @@ To-Do-List-App/
 │
 ├─ README.md
 └─ .gitignore
-
+```
 ## Technologies Used
 
 - HTML, CSS, JavaScript (Frontend)
