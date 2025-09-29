@@ -19,19 +19,18 @@ Clone the repository:
 git clone https://github.com/YOUR_USERNAME/YOUR_REPO.git
 cd YOUR_REPO
 
-Install Dependencies for backend:
+## Install dependencies for backend:
 
-```bash
 cd backend
 npm install
 
-Start the backend server
+## Start the backend server:
 
-```bash
 node server.js
 
-Open frontend:
-Open localhost:5000 in your browser or serve using a local server (e.g. Live Server extension for VSCode).
+## Open frontend:
+
+Open localhost:5000 in your browser, or serve using a local server (e.g., Live Server extension for VSCode).
 
 ## Usage
 
@@ -44,9 +43,33 @@ Open localhost:5000 in your browser or serve using a local server (e.g. Live Ser
 
 ## Notes
 
-- The project does not include node_modules. Install Dependencies before running.
-- Backend runs on https://localhost:5000 by default. Make sure this port is free.
-- Fronend and backend communicate via the Fetch API.
+- The project does not include node_modules. Install dependencies before running.
+- Backend runs on http://localhost:5000 by default. Make sure this port is free.
+- Frontend and backend communicate via the Fetch API.
 
 ## File Structure
 
+To-Do-List-App/
+│
+├─ backend/             # Node.js + Express backend
+│  ├─ server.js
+│  ├─ package.json
+│  ├─ package-lock.json
+│  └─ todolist.db
+│
+├─ frontend/            # Frontend files
+│  ├─ index.html
+│  ├─ tasks.html
+│  ├─ styles.css
+│  ├─ script.js
+│  ├─ login.html
+│  └─ register.html
+│
+├─ README.md
+└─ .gitignore
+
+## Technologies Used
+
+- HTML, CSS, JavaScript (Frontend)
+- Node.js, Express (Backend)
+- Fetch API for frontend-backend communication
